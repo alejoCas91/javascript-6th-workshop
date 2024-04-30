@@ -30,14 +30,14 @@ answer1 = prompt(
 );
 if (answer1 == 1) {
   alert(
-    "tu answeruesta: " +
+    "tu respuesta: " +
       answer1 +
       "\nRespuesta correcta: Este console.log imprimira el valor de 'a' como 'undefained' debido a que las variables creadas con var se pueden acceder antes de su declaracion por ende imprimira 1\n\n" +
       'console.log("Valor de a:", a)'
   );
 } else {
   alert(
-    "tu answeruesta: " +
+    "tu respuesta: " +
       answer1 +
       "\nRespuesta incorrecta: La respuesta correcta era 1 ya que este console.log imprimira el valor de 'a' como 'undefained' debido a que las variables creadas con var se pueden acceder antes de su declaracion por ende imprimira 1\n\n" +
       'console.log("Valor de a:", a)'
@@ -51,14 +51,14 @@ answer2 = prompt(
 );
 if (answer2 == 3) {
   alert(
-    "tu answeruesta: " +
+    "tu respuesta: " +
       answer2 +
       "\nRespuesta correcta: Este console.log imprimira el valor de 'b' como 'ReferenceError: Cannot access 'b' before initialization' debido a que la variable creada con let no pueden acceder antes de que esta sea declarada\n\n" +
       'console.log("Valor de b:", b)'
   );
 } else {
   alert(
-    "tu answeruesta: " +
+    "tu respuesta: " +
       answer2 +
       "\nRespuesta incorrecta: La respuesta correcta era la 3 ya que este console.log imprimira el valor de 'b' como 'ReferenceError: Cannot access 'b' before initialization' debido a que la variable creada con let no pueden acceder antes de que esta sea declarada\n\n" +
       'console.log("Valor de b:", b)'
@@ -72,14 +72,14 @@ answer3 = prompt(
 );
 if (answer3 == 3) {
   alert(
-    "tu answeruesta: " +
+    "tu respuesta: " +
       answer3 +
       "\nRespuesta correcta: Este console.log imprimira el valor de 'c' como 'ReferenceError: Cannot access 'c' before initialization' debido a que la variable creada con let no pueden acceder antes de que esta sea declarada\n\n" +
       'console.log("Valor de c:", c)'
   );
 } else {
   alert(
-    "tu answeruesta: " +
+    "tu respuesta: " +
       answer3 +
       "\nRespuesta incorrecta: La respuesta correcta era la 3 ya que este console.log imprimira el valor de 'c' como 'ReferenceError: Cannot access 'c' before initialization' debido a que la variable creada con let no pueden acceder antes de que esta sea declarada\n\n" +
       'console.log("Valor de c:", c)'
@@ -89,20 +89,41 @@ if (answer3 == 3) {
 answer4 = prompt(
   "Con el codigo anterior que crees que pasara con el " +
     'console.log("Resultado de funcionDeclarada:", funcionDeclarada())' +
-    "\n1 - undefained \n2 - 1 \n3 - a"
+    "\n1 - undefained \n2 - error 404 \n3 - Resultado de funcionDeclarada: Función declarada ha sido llamada."
 );
-if (answer4 == 1) {
+if (answer4 == 3) {
   alert(
-    "tu answeruesta: " +
+    "tu respuesta: " +
       answer4 +
       "\nRespuesta correcta: Este console.log imprimira el valor de 'funcionDeclarada' como 'Resultado de funcionDeclarada: Función declarada ha sido llamada.' debido a que esta funcion es expresada\n\n" +
-      'console.log("Valor de a:", a)'
+      'console.log("Resultado de funcionDeclarada:", funcionDeclarada()'
   );
 } else {
   alert(
-    "tu answeruesta: " +
+    "tu respuesta: " +
       answer4 +
-      "\nRespuesta incorrecta: La respuesta correcta era 1 ya que este console.log imprimira el valor de 'funcionDeclarada' como 'Resultado de funcionDeclarada: Función declarada ha sido llamada.' debido a que \n\n" +
-      'console.log("Valor de a:", a)'
+      "\nRespuesta incorrecta: La respuesta correcta era 3 ya que este console.log imprimira el valor de 'funcionDeclarada' como 'Resultado de funcionDeclarada: Función declarada ha sido llamada.' debido a que esta funcion es expresada \n\n" +
+      'console.log("Resultado de funcionDeclarada:", funcionDeclarada()'
+  );
+}
+
+answer5 = prompt(
+  "Con el codigo anterior que crees que pasara con el " +
+    'console.log("Resultado de funcionExpresada:", funcionExpresada())' +
+    "\n1 - Hello world! \n2 - SyntaxError: Unexpected end of input \n3 - Resultado de funcionExpresada: Función expresada ha sido llamada."
+);
+if (answer5 == 2) {
+  alert(
+    "tu respuesta: " +
+      answer5 +
+      "\nRespuesta correcta: Este console.log imprimira el valor de 'funcionExpresada' como 'SyntaxError: Unexpected end of input.' debido a que esta funcion es declarada\n\n" +
+      'console.log("Resultado de funcionExpresada:", funcionExpresada())'
+  );
+} else {
+  alert(
+    "tu respuesta: " +
+      answer5 +
+      "\nRespuesta incorrecta: La respuesta correcta era 2 ya que este console.log imprimira el valor de 'funcionExpresada' como 'SyntaxError: Unexpected end of input.' debido a que esta funcion es declarada\n\n" +
+      'console.log("Resultado de funcionExpresada:", funcionExpresada())'
   );
 }
